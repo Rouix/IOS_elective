@@ -144,3 +144,17 @@ let sparklingHeart = "💖"
 let dollarSign = "\u{24}"
 let blackHeart = "\u{2665}"
 let sparklingHeart1 = "\u{1F496}"
+
+
+//сложить все три переменные, то есть чтобы получилось:
+//Int + Double + String = Int
+//Int + Double + String = Double
+//Int + Double + String = String
+
+var intNumber:Int = 4
+var doubleNumber:Double = 8.15162342
+var stringWord:String = "2017"
+
+var intResult = intNumber + Int(doubleNumber) + Int(stringWord)!
+var doubleResult = Double(intNumber) + doubleNumber + Double(stringWord)!
+var stringResult = String(intNumber) + String(doubleNumber) + stringWord
