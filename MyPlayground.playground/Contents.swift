@@ -93,6 +93,10 @@ let birthday = dateFormatter.date(from: "02.07.1996")
 
 print ("Сколько секунд я живу: \(date.timeIntervalSince(birthday!))")
 
+//а лучше так
+Calendar.current.dateComponents([.day], from: birthday!, to: Date()).day 
+
+
 //6. Создать строку. Прибавить к ней другую строку и Character разными способами.
 
 var stroka:String = "bla bla"
@@ -134,6 +138,9 @@ for character in sl {
         print("find C")
     }
 }
+
+//а лучше так
+(0..26).map({Character(UnicodeScalar("a".unicodeScalar.first!.value + $0)!)})
 
 //*For fun: найти забавные символы и декораторы для символов.
 
